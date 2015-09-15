@@ -20,10 +20,10 @@ namespace AngularSPAwithOffline.Controllers
 
             model.AssemblyVersion = GetType().Assembly.GetName().Version.ToString();
             model.CacheCollection = new List<string>();
-            model.CacheCollection.Add(WriteBundle("~/bundles/AwesomeAngularMVCApp"));
-            //model.CacheCollection.Add(WriteBundle("~/bundles/modernizr"));
-            //model.CacheCollection.Add(WriteBundle("~/bundles/bootstrap"));
             model.CacheCollection.Add(WriteBundle("~/Content/css"));
+            model.CacheCollection.Add(WriteBundle("~/bundles/modernizr"));
+            model.CacheCollection.Add(WriteBundle("~/bundles/bootstrap"));
+            model.CacheCollection.Add(WriteBundle("~/bundles/AwesomeAngularMVCApp"));
             //model.CacheCollection.Add(GetPhysicalFilesToCache("~/images", "*.jpg", string.Empty));
             //model.CacheCollection.Add(GetPhysicalFilesToCache("~/images", "*.png", string.Empty));
             //model.CacheCollection.Add(GetPhysicalFilesToCache("~/Content", "style*.css", string.Empty));
