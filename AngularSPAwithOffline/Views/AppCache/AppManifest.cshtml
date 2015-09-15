@@ -1,0 +1,16 @@
+﻿@model AngularSPAwithOffline.Models.AppCacheModel
+@{  Layout = null;
+    Response.ContentType = "text/cache-manifest";
+    Response.Cache.SetCacheability(HttpCacheability.NoCache);
+    Response.ContentEncoding = System.Text.Encoding.UTF8;
+    Response.Cache.SetExpires(DateTime.MinValue);
+    Response.Write("CACHE MANIFEST");
+}
+# Server Assembly Version: @Model.AssemblyVersion
+NETWORK:
+*
+CACHE:
+@foreach (string cacheItem in Model.CacheCollection)
+{
+    @cacheItem
+}
