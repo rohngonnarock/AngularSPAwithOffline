@@ -2,14 +2,13 @@
 <html manifest="~/AppCache/AppManifest" type="text/cache-manifest" ng-app="AwesomeAngularMVCApp" ng-controller="LandingPageController">
 <head>
     <title ng-bind="models.helloAngular"></title>
-      
+      @Styles.Render("~/Content/css")
     </head>
 <body>
     @RenderBody()
     <footer>
         <h1>Footer </h1>
     </footer>
-    @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/AwesomeAngularMVCApp")
