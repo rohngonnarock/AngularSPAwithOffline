@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Response.Cache.SetExpires(DateTime.Now.AddMinutes(30));
+    Response.Write("Content - Encoding: gzip");
+}
+<!DOCTYPE html>
 <html manifest="~/AppCache/AppManifest" type="text/cache-manifest" ng-app="AwesomeAngularMVCApp" ng-controller="LandingPageController">
 <head>
     <title ng-bind="models.helloAngular"></title>
