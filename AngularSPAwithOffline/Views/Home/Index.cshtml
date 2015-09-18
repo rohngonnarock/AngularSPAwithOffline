@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    Response.Cache.SetExpires(DateTime.MinValue);
+    Response.Cache.SetExpires(DateTime.Now.AddMinutes(30));
 }
 
 <div class="container">
@@ -30,7 +30,7 @@
     </div>
 </div>
 <div class="container mainContent">
-@DateTime.MinValue
+@DateTime.Now.AddMinutes(30)
     <div class="row">
         <div class="col-md-6">
             <div ui-view="containerOne"></div>
