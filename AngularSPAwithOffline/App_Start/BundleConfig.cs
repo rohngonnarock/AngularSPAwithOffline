@@ -9,7 +9,7 @@ namespace AngularSPAwithOffline
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                                  "~/Content/bootstrap.css",
+                                  "~/Content/bootstrap.min.css",
                                   "~/Content/site.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
@@ -20,8 +20,8 @@ namespace AngularSPAwithOffline
                       "~/Scripts/angular.min.js",
                       "~/Scripts/angular-ui-router.min.js",
                       "~/Scripts/angular-ui/ui-bootstrap-tpls.min.js",
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/bootstrap.min.js",
+                      "~/Scripts/respond.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/AwesomeAngularMVCApp")
                 .IncludeDirectory("~/Scripts/Controllers", "*.js")
