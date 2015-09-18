@@ -17,13 +17,10 @@ var configFunction = function ($stateProvider, $httpProvider, $locationProvider)
 
     $stateProvider
         .state('stateOne', {
-            url: '/stateOne?donuts',
+            url: '/stateOne',
             views: {
                 "containerOne": {
                     templateUrl: '/routesDemo/one'
-                },
-                "containerTwo": {
-                    templateUrl: function (params) { return '/routesDemo/two?donuts=' + params.donuts; }
                 },
                 "nestedView@stateOne": {
                     templateUrl: '/routesDemo/four'
@@ -42,12 +39,9 @@ var configFunction = function ($stateProvider, $httpProvider, $locationProvider)
             }
         })
         .state('stateThree', {
-            url: '/stateThree?donuts',
+            url: '/stateThree',
             views: {
-                "containerOne": {
-                    templateUrl: function (params) { return '/routesDemo/two?donuts=' + params.donuts; }
-                },
-                "containerTwo": {
+               "containerTwo": {
                     templateUrl: '/routesDemo/three'
                 }
             }
