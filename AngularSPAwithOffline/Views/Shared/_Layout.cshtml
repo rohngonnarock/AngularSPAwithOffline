@@ -2,8 +2,8 @@
 <html manifest="~/AppCache/AppManifest" type="text/cache-manifest" ng-app="AwesomeAngularMVCApp" ng-controller="LandingPageController">
 <head>
     <title ng-bind="models.helloAngular"></title>
-      @Styles.Render("~/Content/css")
-      
+      @*@Styles.Render("~/Content/css")*@
+      @Styles.RenderFormat("<link href=\"{0}\" rel='stylesheet' async />", "~/Content/css")
     </head>
 <body>
     @RenderBody()
