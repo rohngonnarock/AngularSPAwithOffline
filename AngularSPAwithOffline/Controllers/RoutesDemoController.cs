@@ -14,9 +14,8 @@ namespace AngularSPAwithOffline.Controllers
             return View();
         }
 
-        public ActionResult Two(int donuts = 1)
+        public ActionResult Two()
         {
-            ViewBag.Donuts = donuts;
             return View();
         }
 
