@@ -28,7 +28,7 @@ namespace AngularSPAwithOffline
                 .IncludeDirectory("~/Scripts/Factories", "*.js")
                 .Include("~/Scripts/AwesomeAngularMVCApp.js"));
 
-            BundleTable.EnableOptimizations = false;
+            BundleTable.EnableOptimizations = true;
         }
     }
 }
