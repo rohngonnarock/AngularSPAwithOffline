@@ -5,12 +5,14 @@
 <html manifest="~/AppCache/AppManifest" type="text/cache-manifest" ng-app="AwesomeAngularMVCApp" ng-controller="LandingPageController">
 <head>
     <title ng-bind="models.helloAngular"></title>
-    </head>
+</head>
 <body>
     @RenderBody()
-    <footer>
-        <h1>Footer </h1>
-    </footer>
+    <div class="container">
+        <footer>
+            <p>&copy; RahlRokks 2015</p>
+        </footer>
+    </div>
     @Styles.RenderFormat("<link href=\"{0}\" rel='stylesheet' async />", "~/Content/css")
     @Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", "~/bundles/modernizr")
     @Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\"></script>", "~/bundles/bootstrap")
