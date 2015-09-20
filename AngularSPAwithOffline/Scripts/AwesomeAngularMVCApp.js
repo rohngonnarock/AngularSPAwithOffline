@@ -16,32 +16,43 @@ var configFunction = function ($stateProvider, $httpProvider, $locationProvider)
     });
 
     $stateProvider
+        .state('Root', {
+            url: '/',
+            views: {
+                "containerOne": {
+                    templateUrl: '/routesDemo/one'
+                }
+                //, "nestedView@stateOne": {
+                //    templateUrl: '/routesDemo/four'
+                //}
+            }
+        })
         .state('stateOne', {
             url: '/stateOne',
             views: {
                 "containerOne": {
                     templateUrl: '/routesDemo/one'
-                },
-                "nestedView@stateOne": {
-                    templateUrl: '/routesDemo/four'
                 }
+                //, "nestedView@stateOne": {
+                //    templateUrl: '/routesDemo/four'
+                //}
             }
         })
         .state('stateTwo', {
             url: '/stateTwo',
             views: {
                 "containerOne": {
-                    templateUrl: '/routesDemo/one'
-                },
-                "containerTwo": {
-                    templateUrl: '/routesDemo/three'
+                    templateUrl: '/routesDemo/two'
                 }
+                //, "containerTwo": {
+                //    templateUrl: '/routesDemo/three'
+                //}
             }
         })
         .state('stateThree', {
             url: '/stateThree',
             views: {
-               "containerTwo": {
+                "containerOne": {
                     templateUrl: '/routesDemo/three'
                 }
             }
