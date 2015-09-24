@@ -66,3 +66,4 @@ D:\Development\WorkingFolder\AngularSPAwithOffline\AngularSPAwithOffline\bin\Mic
 D:\Development\WorkingFolder\AngularSPAwithOffline\AngularSPAwithOffline\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Development\WorkingFolder\AngularSPAwithOffline\AngularSPAwithOffline\obj\Debug\AngularSPAwithOffline.dll
 D:\Development\WorkingFolder\AngularSPAwithOffline\AngularSPAwithOffline\obj\Debug\AngularSPAwithOffline.pdb
+D:\Development\WorkingFolder\AngularSPAwithOffline\AngularSPAwithOffline\obj\Debug\AngularSPAwithOffline.csprojResolveAssemblyReference.cache
