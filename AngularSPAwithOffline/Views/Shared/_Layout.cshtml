@@ -2,7 +2,7 @@
     Response.Cache.SetExpires(DateTime.Now.AddMinutes(30));
 }
 <!DOCTYPE html>
-<html manifest="~/AppCache/AppManifest" typeof="text/cache-manifest" ng-app="AwesomeAngularMVCApp" ng-controller="LandingPageController">
+<html manifest="~/AppCache/AppManifest" typeof="text/cache-manifest ng-app="AwesomeAngularMVCApp" ng-controller="LandingPageController">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="navbar-wrapper">
-        <div class="navbar navbar-inverse navbar-fixed-top navbar-tran">
+        <div class="navbar navbar-inverse navbar-static-top navbar-tran top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -21,14 +21,14 @@
                     <a class="navbar-brand" ui-sref="stateOne">Rahl Rokks</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-right">
                         <li><a ui-sref="stateOne">DashBoard</a></li>
                         <li><a ui-sref="stateTwo">About</a></li>
                         <li><a ui-sref="stateThree">Contact</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
+                    @*<ul class="nav navbar-nav navbar-right">
                         <li><a ui-sref="loginRegister">Login / Register</a></li>
-                    </ul>
+                    </ul>*@
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
         </footer>
     </div>
     @Styles.RenderFormat("<link href=\"{0}\" rel='stylesheet' async />", "~/Content/css")
-    //@Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", "~/bundles/modernizr")
+    @Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", "~/bundles/modernizr")
     @Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\"></script>", "~/bundles/bootstrap")
     @Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\"></script>", "~/bundles/AwesomeAngularMVCApp")
     @RenderSection("Scripts", required: false)
